@@ -55,7 +55,7 @@ body {
   width: 100%;
   height: 100vh;
   z-index: -1;
-  background: url("../img/main-image.png") no-repeat center center;
+  background: url("../img/main-image-enhanced.jpeg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -97,5 +97,13 @@ section {
 
   p {
     padding: 0 15vw;
+  }
+
+  &.photos {
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
   }
 }

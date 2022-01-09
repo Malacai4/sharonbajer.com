@@ -60,7 +60,7 @@ body {
   width: 100%;
   height: 100vh;
   z-index: -1;
-  background: url("../img/main-image.png") no-repeat center center;
+  background: url("../img/main-image-enhanced.jpeg") no-repeat center center;
   background-size: cover;
 }
 
@@ -100,5 +100,16 @@ section {
 
 section p {
   padding: 0 15vw;
+}
+
+section.photos {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.photos img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
