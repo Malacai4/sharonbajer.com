@@ -32,7 +32,7 @@ body {
 
   background-color: $fg-color;
   color: white;
-  border-bottom: 1px solid white;
+  border-bottom: 6px solid $hl-color;
 
   padding: 0 $side-pad;
 
@@ -87,21 +87,24 @@ section {
   width: 100%;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
 
   padding: 10vh $side-pad;
 
   background-color: $fg-color;
   color: white;
-  border-top: 1px solid white;
+  border-top: 6px solid $hl-color;
 
   p {
     padding: 0 15vw;
   }
 
-  &.photos {
-    flex-direction: column;
+  h1 {
+    text-decoration: 6px underline $hl-color;
+  }
 
+  &.photos {
     img {
       width: 100%;
     }
