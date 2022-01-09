@@ -31,25 +31,49 @@ body {
   color: white;
   border-bottom: 1px solid white;
 
-  padding: 0 10vw;
+  padding: 0 5vw;
 
   .titles {
     .name {
-      font-size: 24px;
-    }
-
-    .unions {
       font-size: 16px;
     }
 
-    @media only screen and (max-width: 900px) {
-      .name {
-        font-size: 16px;
-      }
+    .unions {
+      font-size: 12px;
+    }
+  }
+}
+.parallax:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background: url("../img/main-image.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-      .unions {
-        font-size: 8px;
-      }
+.parallax-inner {
+  .quote {
+    width: 100%;
+    height: 10vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 15vh;
+    margin-bottom: calc(75vh - $nav-height);
+
+    h1 {
+      color: white;
+      font-size: 48px;
     }
   }
 }

@@ -21,7 +21,7 @@ body {
 
 .navbar {
   width: 100%;
-  height: 140px;
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,23 +38,48 @@ body {
   background-color: #323232;
   color: white;
   border-bottom: 1px solid white;
-  padding: 0 10vw;
+  padding: 0 5vw;
 }
 
 .navbar .titles .name {
-  font-size: 24px;
-}
-
-.navbar .titles .unions {
   font-size: 16px;
 }
 
-@media only screen and (max-width: 900px) {
-  .navbar .titles .name {
-    font-size: 16px;
-  }
-  .navbar .titles .unions {
-    font-size: 8px;
-  }
+.navbar .titles .unions {
+  font-size: 12px;
+}
+
+.parallax:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background: url("../img/main-image.png") no-repeat center center;
+  background-size: cover;
+}
+
+.parallax-inner .quote {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15vh;
+  margin-bottom: calc(75vh - $nav-height);
+}
+
+.parallax-inner .quote h1 {
+  color: white;
+  font-size: 48px;
 }
 /*# sourceMappingURL=style.css.map */
