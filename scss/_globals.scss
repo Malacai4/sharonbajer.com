@@ -1,22 +1,18 @@
-html {
-  font-size: 100%;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  line-height: 1.3;
-
-  background-color: $bg-color;
+html {
+  scroll-behavior: smooth;
+  body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+  }
 }
 
 .navbar {
@@ -83,10 +79,6 @@ body {
     align-items: center;
     justify-content: center;
 
-    // margin-top: 15vh;
-    // margin-bottom: calc(75vh - $nav-height);
-    // padding-bottom: 20vh;
-
     p {
       color: white;
       font-size: 48px;
@@ -95,26 +87,39 @@ body {
   }
 }
 
-section {
+.container {
   width: 100%;
+  height: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  padding: 10vh $side-pad;
-
-  background-color: $fg-color;
-  color: white;
-  // border-top: 6px solid $hl-color;
-
-  p {
-    padding: 0 15vw;
+  header {
+    scroll-snap-align: start;
   }
 
-  &.photos {
-    img {
-      width: 100%;
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+
+    scroll-snap-align: start;
+
+    padding: 10vh $side-pad;
+
+    background-color: $fg-color;
+    color: white;
+    border-top: 1px solid $hl-color;
+
+    p {
+      padding: 0 15vw;
+    }
+
+    &.photos {
+      img {
+        width: 100%;
+      }
     }
   }
 }
