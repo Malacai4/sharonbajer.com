@@ -59,6 +59,12 @@ html body {
   padding-right: 3vw;
 }
 
+.navbar.scrolled {
+  background-color: white !important;
+  -webkit-transition: background-color 1s ease;
+  transition: background-color 1s ease;
+}
+
 .parallax:before {
   content: "";
   display: block;

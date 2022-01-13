@@ -53,6 +53,11 @@ html {
       padding-right: 3vw;
     }
   }
+
+  &.scrolled {
+    background-color: white !important;
+    transition: background-color 1s ease;
+  }
 }
 .parallax:before {
   content: "";
