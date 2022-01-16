@@ -40,12 +40,7 @@ html {
     }
   }
 
-  .title {
-    font-size: 32px;
-  }
-
-  .left-links,
-  .right-links {
+  .nav-links {
     a {
       font-size: 16px;
       color: white;
@@ -55,7 +50,7 @@ html {
   }
 
   &.scrolled {
-    background-color: white !important;
+    background: $hl-color !important;
     transition: background-color 1s ease;
   }
 }
@@ -93,22 +88,11 @@ html {
 }
 
 .container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
-
-  header {
-    scroll-snap-align: start;
-  }
-
   section {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
-
-    scroll-snap-align: start;
 
     padding: 10vh $side-pad;
 
