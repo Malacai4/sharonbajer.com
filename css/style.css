@@ -55,7 +55,7 @@ html body {
 }
 
 .navbar.scrolled {
-  background: #525252 !important;
+  background: black !important;
   -webkit-transition: background-color 1s ease;
   transition: background-color 1s ease;
 }
@@ -107,7 +107,7 @@ html body {
   padding: 10vh 5vw;
   background-color: black;
   color: white;
-  border-top: 1px solid #525252;
+  border-top: 1px solid black;
 }
 
 .container section p {
