@@ -27,8 +27,9 @@ html {
   align-items: center;
   justify-content: space-between;
 
-  background-color: $hl-color;
+  // background-color: $hl-color;
   color: white;
+  mix-blend-mode: difference; // changing text colour on change background color
   padding: 0 $side-pad;
 
   .titles {
