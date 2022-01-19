@@ -54,12 +54,6 @@ html body {
   padding-right: 3vw;
 }
 
-.navbar.scrolled {
-  background: black !important;
-  -webkit-transition: background-color 1s ease;
-  transition: background-color 1s ease;
-}
-
 .parallax:before {
   content: "";
   display: block;
@@ -93,6 +87,18 @@ html body {
   margin-bottom: 200px;
 }
 
+.container {
+  width: 100%;
+  height: 100vh;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.container header {
+  scroll-snap-align: start;
+}
+
 .container section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -104,6 +110,8 @@ html body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  height: 100vh;
+  scroll-snap-align: start;
   padding: 10vh 5vw;
   background-color: black;
   color: white;

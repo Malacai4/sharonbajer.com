@@ -48,11 +48,6 @@ html {
       padding-right: 3vw;
     }
   }
-
-  &.scrolled {
-    background: $hl-color !important;
-    transition: background-color 1s ease;
-  }
 }
 .parallax:before {
   content: "";
@@ -88,11 +83,23 @@ html {
 }
 
 .container {
+  width: 100%;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+
+  header {
+    scroll-snap-align: start;
+  }
+
   section {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100vh;
+
+    scroll-snap-align: start;
 
     padding: 10vh $side-pad;
 
