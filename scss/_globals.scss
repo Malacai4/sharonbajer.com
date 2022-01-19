@@ -27,6 +27,7 @@ html {
   align-items: center;
   justify-content: space-between;
 
+  background-color: $hl-color;
   color: white;
   padding: 0 $side-pad;
 
@@ -126,7 +127,9 @@ html {
       }
     }
 
-    &.bio {
+    &.bio,
+    &.philosophy,
+    &.role {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
