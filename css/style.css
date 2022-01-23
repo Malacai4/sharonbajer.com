@@ -106,6 +106,7 @@ html body {
   scroll-snap-align: start;
   padding: 0 15vw;
   background: linear-gradient(115deg, black 50%, white 50%);
+  background-size: 250% 100%;
   color: black;
 }
 
@@ -152,5 +153,56 @@ html body {
 .container section.bio img, .container section.philosophy img, .container section.role img {
   width: auto;
   height: 60%;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+@-webkit-keyframes ungradient {
+  0% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes ungradient {
+  0% {
+    background-position: 50% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .slide-anim {
+    -webkit-animation: gradient 1s ease 1;
+            animation: gradient 1s ease 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  .unslide-anim {
+    -webkit-animation: ungradient 1s ease 1;
+            animation: ungradient 1s ease 1;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -102,9 +102,11 @@ html {
 
     padding: 0 15vw;
 
+    //background animation
     background: linear-gradient(115deg, black 50%, white 50%);
+    background-size: 250% 100%;
+
     color: black;
-    // border-top: 1px solid $hl-color;
 
     .text-container {
       display: flex;
@@ -141,5 +143,38 @@ html {
         height: 60%;
       }
     }
+  }
+}
+
+//animations
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
+@keyframes ungradient {
+  0% {
+    background-position: 50% 0%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+//animation classes
+@media (prefers-reduced-motion: no-preference) {
+  .slide-anim {
+    animation: gradient 1s ease 1;
+    animation-fill-mode: forwards;
+  }
+
+  .unslide-anim {
+    animation: ungradient 1s ease 1;
+    animation-fill-mode: forwards;
   }
 }
