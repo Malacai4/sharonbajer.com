@@ -1,12 +1,10 @@
 $(".navbar").load("../common/nav.html");
 
 const imgs = document.querySelectorAll("section img");
-let divIndex = 0;
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
-    var $sec = $(".container section")[divIndex];
-    console.log($sec);
+    var $sec = entry.target.parentElement;
 
     if (entry.isIntersecting) {
       $sec.classList.remove("unslide-anim");
@@ -18,7 +16,6 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-imgs.forEach((i) => {
-  observer.observe(i);
-  divIndex = imgs.indexOf(i);
-});
+for (let i = 0; i < imgs.length; i++) {
+  observer.observe(imgs[i], i);
+}
