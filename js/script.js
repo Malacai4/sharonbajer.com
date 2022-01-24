@@ -1,6 +1,6 @@
 $(".navbar").load("../common/nav.html");
 
-const imgs = document.querySelectorAll("section img");
+const imgs = document.querySelectorAll("section .text-container");
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {

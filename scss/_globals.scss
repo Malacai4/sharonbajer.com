@@ -27,10 +27,24 @@ html {
   align-items: center;
   justify-content: space-between;
 
-  // background-color: $hl-color;
+  // background-color: blue;
   color: white;
   mix-blend-mode: difference; // changing text colour on change background color
   padding: 0 $side-pad;
+
+  .icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    a {
+      color: white;
+      font-size: 32px;
+      margin-top: 5px;
+      margin-right: 10px;
+    }
+  }
 
   .titles {
     .name {
@@ -108,19 +122,12 @@ html {
 
     color: black;
 
-    .text-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .page-links {
+      color: rgb(150, 150, 150);
+      transition: color $trans-time ease;
 
-      width: 50%;
-      height: 60%;
-
-      background-color: white;
-      border: 3px solid black;
-
-      p {
-        margin: 0 5vw;
+      &:hover {
+        color: black;
       }
     }
 
@@ -138,9 +145,46 @@ html {
       justify-content: space-between;
       align-items: center;
 
-      img {
-        width: auto;
-        height: 60%;
+      .image-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        // background-color: blue;
+        color: white;
+
+        i {
+          font-size: 12px;
+          padding-top: 10px;
+
+          mix-blend-mode: difference; // changing text colour on change background color
+        }
+
+        img {
+          width: auto;
+          height: 60%;
+          // background-color: yellow;
+        }
+      }
+
+      .text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        width: 50%;
+        height: fit-content;
+        padding: 3vh 3vw;
+
+        background-color: white;
+        border: 3px solid black;
+
+        p,
+        a {
+          font-size: 20px;
+        }
       }
     }
   }
