@@ -140,8 +140,6 @@ html body {
   scroll-snap-align: start;
   padding: 0 10vw;
   padding-top: 100px;
-  background: linear-gradient(115deg, black 50%, white 50%);
-  background-size: 250% 100%;
   color: black;
 }
 
@@ -159,6 +157,10 @@ html body {
   width: 100%;
 }
 
+.container section.contact {
+  background-color: white;
+}
+
 .container section.bio, .container section.philosophy, .container section.role {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,6 +175,8 @@ html body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: linear-gradient(115deg, black 50%, white 50%);
+  background-size: 250% 100%;
 }
 
 .container section.bio .image-container, .container section.philosophy .image-container, .container section.role .image-container {

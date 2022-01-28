@@ -134,8 +134,6 @@ html {
     padding-top: 100px;
 
     //background animation
-    background: linear-gradient(115deg, black 50%, white 50%);
-    background-size: 250% 100%;
 
     color: black;
 
@@ -154,6 +152,10 @@ html {
       }
     }
 
+    &.contact {
+      background-color: white;
+    }
+
     &.bio,
     &.philosophy,
     &.role {
@@ -161,6 +163,9 @@ html {
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+
+      background: linear-gradient(115deg, black 50%, white 50%);
+      background-size: 250% 100%;
 
       .image-container {
         height: 100%;
