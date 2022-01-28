@@ -76,6 +76,10 @@ html body {
   padding-right: 3vw;
 }
 
+.navbar.other {
+  background-color: black;
+}
+
 .parallax:before {
   content: "";
   display: block;

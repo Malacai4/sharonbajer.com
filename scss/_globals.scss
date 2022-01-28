@@ -64,6 +64,10 @@ html {
       padding-right: 3vw;
     }
   }
+
+  &.other {
+    background-color: black;
+  }
 }
 .parallax:before {
   content: "";
