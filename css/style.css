@@ -40,6 +40,17 @@ html body {
   padding: 0 5vw;
 }
 
+.navbar .icons a,
+.navbar .nav-links a {
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.navbar .icons a:hover,
+.navbar .nav-links a:hover {
+  color: #787878;
+}
+
 .navbar .icons {
   width: 100%;
   display: -webkit-box;
@@ -139,12 +150,12 @@ html body {
   height: 100vh;
   scroll-snap-align: start;
   padding: 0 10vw;
-  padding-top: 100px;
+  padding-top: 150px;
   color: black;
 }
 
 .container section .page-links {
-  color: #969696;
+  color: #797979;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
@@ -159,6 +170,16 @@ html body {
 
 .container section.contact {
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .container section.bio, .container section.philosophy, .container section.role {
@@ -284,5 +305,21 @@ html body {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
+}
+
+.contact-btn {
+  color: black;
+  text-decoration: none;
+  background: linear-gradient(115deg, white 50%, black 50%);
+  background-size: 400% 100%;
+  outline: 1px solid black;
+  padding: 20px 100px;
+  -webkit-transition: background-position 1s ease, color 1s ease;
+  transition: background-position 1s ease, color 1s ease;
+}
+
+.contact-btn:hover {
+  background-position: 100% 0%;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
