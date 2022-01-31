@@ -22,7 +22,13 @@ html {
   z-index: 10;
 
   width: 100%;
-  height: $nav-height;
+
+  @media (min-width: 1000px) {
+    height: $nav-height;
+  }
+  @media (max-width: 1000px) {
+    height: $mob-nav-height;
+  }
 
   display: flex;
   flex-direction: row;
@@ -108,7 +114,7 @@ html {
       width: 100%;
       height: 100vh;
 
-      padding-top: $nav-height;
+      padding-top: $mob-nav-height;
 
       display: flex;
       flex-direction: column;
@@ -214,7 +220,7 @@ html {
     }
     @media (max-width: 1000px) {
       padding: 0 $side-pad;
-      padding-top: $nav-height;
+      padding-top: $mob-nav-height;
     }
 
     color: black;
