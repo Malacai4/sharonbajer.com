@@ -39,18 +39,8 @@ html body {
   padding: 0 5vw;
 }
 
-@media (min-width: 1000px) {
-  .navbar .titles,
-  .navbar .icons,
-  .navbar .nav-links {
-    mix-blend-mode: difference;
-  }
-}
-
 @media (max-width: 1000px) {
-  .navbar .titles,
-  .navbar .icons,
-  .navbar button.hamburger {
+  .navbar .nav-links a {
     mix-blend-mode: difference;
   }
 }
@@ -217,9 +207,21 @@ html body {
   width: 100%;
   height: 100vh;
   scroll-snap-align: start;
-  padding: 0 10vw;
-  padding-top: 150px;
   color: black;
+}
+
+@media (min-width: 1000px) {
+  .container section {
+    padding: 0 10vw;
+    padding-top: 150px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container section {
+    padding: 0 5vw;
+    padding-top: 150px;
+  }
 }
 
 .container section .page-links {
@@ -250,78 +252,146 @@ html body {
           justify-content: space-evenly;
 }
 
-.container section.bio, .container section.philosophy, .container section.role {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: linear-gradient(115deg, black 50%, white 50%);
-  background-size: 250% 100%;
+@media (min-width: 1000px) {
+  .container section.bio, .container section.philosophy, .container section.role {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: linear-gradient(115deg, black 50%, white 50%);
+    background-size: 250% 100%;
+  }
+  .container section.bio .image-container, .container section.philosophy .image-container, .container section.role .image-container {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  .container section.bio .image-container i, .container section.philosophy .image-container i, .container section.role .image-container i {
+    font-size: 12px;
+    padding-top: 10px;
+    mix-blend-mode: difference;
+  }
+  .container section.bio .image-container img, .container section.philosophy .image-container img, .container section.role .image-container img {
+    width: auto;
+    height: 60%;
+  }
+  .container section.bio .text-container, .container section.philosophy .text-container, .container section.role .text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 3vh 3vw;
+    background-color: white;
+    border: 3px solid black;
+  }
+  .container section.bio .text-container p,
+  .container section.bio .text-container a, .container section.philosophy .text-container p,
+  .container section.philosophy .text-container a, .container section.role .text-container p,
+  .container section.role .text-container a {
+    font-size: 20px;
+  }
 }
 
-.container section.bio .image-container, .container section.philosophy .image-container, .container section.role .image-container {
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-}
-
-.container section.bio .image-container i, .container section.philosophy .image-container i, .container section.role .image-container i {
-  font-size: 12px;
-  padding-top: 10px;
-  mix-blend-mode: difference;
-}
-
-.container section.bio .image-container img, .container section.philosophy .image-container img, .container section.role .image-container img {
-  width: auto;
-  height: 60%;
-}
-
-.container section.bio .text-container, .container section.philosophy .text-container, .container section.role .text-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 50%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 3vh 3vw;
-  background-color: white;
-  border: 3px solid black;
-}
-
-.container section.bio .text-container p,
-.container section.bio .text-container a, .container section.philosophy .text-container p,
-.container section.philosophy .text-container a, .container section.role .text-container p,
-.container section.role .text-container a {
-  font-size: 20px;
+@media (max-width: 1000px) {
+  .container section.bio, .container section.philosophy, .container section.role {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: linear-gradient(115deg, black 50%, white 50%);
+    background-size: 250% 100%;
+  }
+  .container section.bio .image-container, .container section.philosophy .image-container, .container section.role .image-container {
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+  }
+  .container section.bio .image-container i, .container section.philosophy .image-container i, .container section.role .image-container i {
+    font-size: 10px;
+    padding-top: 5px;
+    mix-blend-mode: difference;
+  }
+  .container section.bio .image-container img, .container section.philosophy .image-container img, .container section.role .image-container img {
+    width: auto;
+    height: 100%;
+  }
+  .container section.bio .text-container, .container section.philosophy .text-container, .container section.role .text-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 1vh 1vw;
+    background-color: white;
+    border: 3px solid black;
+  }
+  .container section.bio .text-container p,
+  .container section.bio .text-container a, .container section.philosophy .text-container p,
+  .container section.philosophy .text-container a, .container section.role .text-container p,
+  .container section.role .text-container a {
+    font-size: 16px;
+  }
 }
 
 @-webkit-keyframes gradient {
