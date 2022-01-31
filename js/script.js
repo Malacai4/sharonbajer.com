@@ -19,3 +19,8 @@ const observer = new IntersectionObserver((entries) => {
 for (let i = 0; i < imgs.length; i++) {
   observer.observe(imgs[i], i);
 }
+
+//open hamburger menu
+$("button.hamburger").on("click", function () {
+  alert("hello");
+});

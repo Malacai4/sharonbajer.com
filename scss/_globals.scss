@@ -29,8 +29,23 @@ html {
 
   // background-color: blue;
   color: white;
-  mix-blend-mode: difference; // changing text colour on change background color
   padding: 0 $side-pad;
+
+  //mixed colors thing
+  @media (min-width: 1000px) {
+    .titles,
+    .icons,
+    .nav-links {
+      mix-blend-mode: difference; // changing text colour on change background color
+    }
+  }
+  @media (max-width: 1000px) {
+    .titles,
+    .icons,
+    button.hamburger {
+      mix-blend-mode: difference; // changing text colour on change background color
+    }
+  }
 
   .icons a,
   .nav-links a {
@@ -65,12 +80,52 @@ html {
     }
   }
 
-  .nav-links {
-    a {
-      font-size: 16px;
-      color: white;
-      text-decoration: none;
-      padding-right: 3vw;
+  @media (min-width: 1000px) {
+    .nav-links {
+      a {
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        margin-left: 3vw;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .nav-links {
+      position: fixed;
+      top: 0;
+      left: 0;
+
+      z-index: -9;
+
+      width: 100%;
+      height: 100vh;
+
+      padding-top: $nav-height;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+
+      background-color: black;
+      border-radius: 50%;
+      transform: scale(0%);
+
+      transition: border-radius 1s ease, transform 1s ease;
+
+      a {
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+      }
+
+      &.open {
+        border-radius: 0%;
+
+        transform: scale(100%);
+      }
     }
   }
 
@@ -274,5 +329,17 @@ html {
   &:hover {
     background-position: 100% 0%;
     color: white;
+  }
+}
+
+//Hamburger menu
+@media (min-width: 1000px) {
+  button.hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar .nav-links {
   }
 }
