@@ -65,12 +65,24 @@ html {
   }
 
   .titles {
-    .name {
-      font-size: 16px;
+    @media (min-width: 1000px) {
+      .name {
+        font-size: 16px;
+      }
+
+      .unions {
+        font-size: 12px;
+      }
     }
 
-    .unions {
-      font-size: 12px;
+    @media (max-width: 1000px) {
+      .name {
+        font-size: 14px;
+      }
+
+      .unions {
+        font-size: 10px;
+      }
     }
   }
 
