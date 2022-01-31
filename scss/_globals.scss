@@ -27,17 +27,16 @@ html {
   align-items: center;
   justify-content: space-between;
 
-  // background-color: blue;
   color: white;
   padding: 0 $side-pad;
 
   //mixed colors thing
-  // mix-blend-mode: difference;
+  @media (min-width: 1000px) {
+    mix-blend-mode: difference;
+  }
 
   @media (max-width: 1000px) {
-    .nav-links a {
-      mix-blend-mode: difference;
-    }
+    background-color: black;
   }
 
   .icons a,
@@ -378,10 +377,10 @@ html {
 
 // Buttons
 .contact-btn {
-  color: black;
+  color: white;
   text-decoration: none;
 
-  background: linear-gradient(115deg, white 50%, black 50%);
+  background: linear-gradient(115deg, black 50%, white 50%);
   background-size: 400% 100%;
   outline: 1px solid black;
 
@@ -391,7 +390,7 @@ html {
 
   &:hover {
     background-position: 100% 0%;
-    color: white;
+    color: black;
   }
 }
 

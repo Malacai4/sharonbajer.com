@@ -39,9 +39,15 @@ html body {
   padding: 0 5vw;
 }
 
-@media (max-width: 1000px) {
-  .navbar .nav-links a {
+@media (min-width: 1000px) {
+  .navbar {
     mix-blend-mode: difference;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    background-color: black;
   }
 }
 
@@ -446,9 +452,9 @@ html body {
 }
 
 .contact-btn {
-  color: black;
+  color: white;
   text-decoration: none;
-  background: linear-gradient(115deg, white 50%, black 50%);
+  background: linear-gradient(115deg, black 50%, white 50%);
   background-size: 400% 100%;
   outline: 1px solid black;
   padding: 20px 100px;
@@ -458,7 +464,7 @@ html body {
 
 .contact-btn:hover {
   background-position: 100% 0%;
-  color: white;
+  color: black;
 }
 
 @media (min-width: 1000px) {
