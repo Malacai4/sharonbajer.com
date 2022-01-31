@@ -129,6 +129,8 @@ html {
     background-color: black;
   }
 }
+
+// parallax
 .parallax:before {
   content: "";
   display: block;
@@ -154,10 +156,20 @@ html {
     align-items: center;
     justify-content: center;
 
-    p {
-      color: white;
-      font-size: 48px;
-      margin-bottom: 200px;
+    @media (min-width: 1000px) {
+      p {
+        color: white;
+        font-size: 40px;
+        margin-bottom: 200px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      p {
+        color: white;
+        font-size: 20px;
+        margin-bottom: 200px;
+      }
     }
   }
 
