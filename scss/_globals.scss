@@ -165,22 +165,22 @@ html {
     height: 100vh;
 
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
 
     @media (min-width: 1000px) {
       p {
         color: white;
         font-size: 40px;
-        margin-bottom: 200px;
+        margin-top: 250px;
       }
     }
 
     @media (max-width: 1000px) {
       p {
         color: white;
-        font-size: 20px;
-        margin-bottom: 200px;
+        font-size: 18px;
+        margin-top: 300px;
       }
     }
   }
