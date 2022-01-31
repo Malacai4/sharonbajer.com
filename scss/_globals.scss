@@ -5,6 +5,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   overflow-x: hidden;
 
   body {
@@ -201,8 +202,8 @@ html {
 .container {
   width: 100%;
   height: 100vh;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  // scroll-snap-type: y mandatory;
+  // overflow-y: scroll;
 
   header {
     scroll-snap-align: start;
