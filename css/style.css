@@ -224,6 +224,14 @@ html body {
   height: 100vh;
 }
 
+@media (min-width: 1000px) {
+  .container {
+    -ms-scroll-snap-type: y mandatory;
+        scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+  }
+}
+
 .container header {
   scroll-snap-align: start;
 }
