@@ -20,7 +20,7 @@ for (let i = 0; i < imgs.length; i++) {
   observer.observe(imgs[i], i);
 }
 
-//open hamburger menu
-$("button.hamburger").on("click", function () {
-  alert("hello");
-});
+function openHam() {
+  $(".hamburger").toggleClass("is-active");
+  $(".nav-links").toggleClass("open");
+}

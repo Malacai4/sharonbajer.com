@@ -126,14 +126,13 @@ html body {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    background-color: black;
-    border-radius: 50%;
-    -webkit-transform: scale(0%);
-            transform: scale(0%);
-    -webkit-transition: border-radius 1s ease, -webkit-transform 1s ease;
-    transition: border-radius 1s ease, -webkit-transform 1s ease;
-    transition: border-radius 1s ease, transform 1s ease;
-    transition: border-radius 1s ease, transform 1s ease, -webkit-transform 1s ease;
+    background: black;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 1s ease;
+    transition: -webkit-transform 1s ease;
+    transition: transform 1s ease;
+    transition: transform 1s ease, -webkit-transform 1s ease;
   }
   .navbar .nav-links a {
     font-size: 16px;
@@ -141,9 +140,8 @@ html body {
     text-decoration: none;
   }
   .navbar .nav-links.open {
-    border-radius: 0%;
-    -webkit-transform: scale(100%);
-            transform: scale(100%);
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
