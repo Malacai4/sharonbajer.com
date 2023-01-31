@@ -183,6 +183,11 @@ html body {
   scroll-snap-align: start;
   color: black;
 }
+.container section .spacer {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+}
 @media (min-width: 1000px) {
   .container section {
     padding: 0 10vw;
@@ -342,7 +347,6 @@ html body {
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
   }
-
   .unslide-anim {
     -webkit-animation: ungradient 1s ease 1;
             animation: ungradient 1s ease 1;

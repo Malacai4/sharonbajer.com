@@ -216,6 +216,12 @@ html {
     height: 100vh;
     scroll-snap-align: start;
 
+    .spacer {
+      height: 3px;
+      width: 100%;
+      background-color: black;
+    }
+
     @media (min-width: 1000px) {
       padding: 0 10vw;
       padding-top: $nav-height;
