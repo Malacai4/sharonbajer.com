@@ -428,3 +428,37 @@ html {
     display: none;
   }
 }
+
+// Theatre Page
+.afterlight {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+
+  img {
+    width: auto;
+    height: 80vh;
+  }
+}
+
+.info {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0 10vw;
+
+  img {
+    width: auto;
+    height: 150px;
+    margin-bottom: 10vh;
+  }
+}

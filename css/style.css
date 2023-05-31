@@ -169,8 +169,7 @@ html body {
 }
 @media (min-width: 1000px) {
   .container {
-    -ms-scroll-snap-type: y mandatory;
-        scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
     overflow-y: scroll;
   }
 }
@@ -247,7 +246,6 @@ html body {
     flex-direction: column;
     justify-content: center;
     width: 50%;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     padding: 3vh 3vw;
@@ -255,9 +253,9 @@ html body {
     border: 3px solid black;
   }
   .container section.bio .text-container p,
-.container section.bio .text-container a, .container section.philosophy .text-container p,
-.container section.philosophy .text-container a, .container section.role .text-container p,
-.container section.role .text-container a {
+  .container section.bio .text-container a, .container section.philosophy .text-container p,
+  .container section.philosophy .text-container a, .container section.role .text-container p,
+  .container section.role .text-container a {
     font-size: 20px;
   }
 }
@@ -292,7 +290,6 @@ html body {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     padding: 1vh 1vw;
@@ -300,19 +297,10 @@ html body {
     border: 3px solid black;
   }
   .container section.bio .text-container p,
-.container section.bio .text-container a, .container section.philosophy .text-container p,
-.container section.philosophy .text-container a, .container section.role .text-container p,
-.container section.role .text-container a {
+  .container section.bio .text-container a, .container section.philosophy .text-container p,
+  .container section.philosophy .text-container a, .container section.role .text-container p,
+  .container section.role .text-container a {
     font-size: 16px;
-  }
-}
-
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 50% 0%;
   }
 }
 
@@ -322,14 +310,6 @@ html body {
   }
   100% {
     background-position: 50% 0%;
-  }
-}
-@-webkit-keyframes ungradient {
-  0% {
-    background-position: 50% 0%;
-  }
-  100% {
-    background-position: 0% 0%;
   }
 }
 @keyframes ungradient {
@@ -342,16 +322,12 @@ html body {
 }
 @media (prefers-reduced-motion: no-preference) {
   .slide-anim {
-    -webkit-animation: gradient 1s ease 1;
-            animation: gradient 1s ease 1;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation: gradient 1s ease 1;
+    animation-fill-mode: forwards;
   }
   .unslide-anim {
-    -webkit-animation: ungradient 1s ease 1;
-            animation: ungradient 1s ease 1;
-    -webkit-animation-fill-mode: forwards;
-            animation-fill-mode: forwards;
+    animation: ungradient 1s ease 1;
+    animation-fill-mode: forwards;
   }
 }
 .contact-btn {
@@ -372,4 +348,31 @@ html body {
   button.hamburger {
     display: none;
   }
+}
+.afterlight {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+.afterlight img {
+  width: auto;
+  height: 80vh;
+}
+
+.info {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10vw;
+}
+.info img {
+  width: auto;
+  height: 150px;
+  margin-bottom: 10vh;
 }/*# sourceMappingURL=style.css.map */
