@@ -199,13 +199,6 @@ html body {
     padding-top: 120px;
   }
 }
-.container section .page-links {
-  color: rgb(121, 121, 121);
-  transition: color 0.5s ease;
-}
-.container section .page-links:hover {
-  color: black;
-}
 .container section.photos img {
   width: 100%;
 }
@@ -304,6 +297,14 @@ html body {
   }
 }
 
+.page-links {
+  color: rgb(121, 121, 121);
+  transition: color 0.5s ease;
+}
+.page-links:hover {
+  color: black;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 0%;
@@ -374,5 +375,8 @@ html body {
 .info img {
   width: auto;
   height: 150px;
+  margin-bottom: 10vh;
+}
+.info p {
   margin-bottom: 10vh;
 }/*# sourceMappingURL=style.css.map */

@@ -233,15 +233,6 @@ html {
 
     color: black;
 
-    .page-links {
-      color: rgb(121, 121, 121);
-      transition: color $trans-time ease;
-
-      &:hover {
-        color: black;
-      }
-    }
-
     &.photos {
       img {
         width: 100%;
@@ -370,6 +361,15 @@ html {
   }
 }
 
+.page-links {
+  color: rgb(121, 121, 121);
+  transition: color $trans-time ease;
+
+  &:hover {
+    color: black;
+  }
+}
+
 //animations
 @keyframes gradient {
   0% {
@@ -459,6 +459,10 @@ html {
   img {
     width: auto;
     height: 150px;
+    margin-bottom: 10vh;
+  }
+
+  p {
     margin-bottom: 10vh;
   }
 }
