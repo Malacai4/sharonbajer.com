@@ -430,6 +430,21 @@ html {
 }
 
 // Theatre Page
+.theatre-container {
+  width: 100%;
+  height: 100vh;
+  @media (min-width: 1000px) {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+  }
+
+  section {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+  }
+}
+
 .afterlight {
   height: 100vh;
   width: 100%;
